@@ -1,0 +1,26 @@
+{
+    "dependencies" : [
+        // Define the widget
+        {
+            "interfaces" : "ride\\library\\cms\\widget\\Widget",
+            "class" : "ride\\wheel\\controller\\widget\\ExampleWidget",
+            "id" : "wheel.example"
+        },
+
+        // Define Dependency Models
+        {
+            "interfaces" : "ride\\wheel\\orm\\model\\ExampleModel",
+            "factory" : {
+                "interface" : "ride\\library\\orm\\OrmManager",
+                "method" : "getExampleModel"
+            }
+        },
+        {
+            "interfaces" : "ride\\application\\orm\\asset\\model\\AssetModel",
+            "factory" : {
+                "interface" : "ride\\library\\orm\\OrmManager",
+                "method" : "getAssetModel"
+            }
+        }
+    ]
+}

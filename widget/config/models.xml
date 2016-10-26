@@ -1,0 +1,18 @@
+<models>
+    <model name="Example" modelClass="ride\wheel\orm\model\ExampleModel">
+        <field name="name" type="string">
+            <validation name="required"/>
+        </field>
+
+        <field name="description" type="text">
+            <validation name="required"/>
+        </field>
+
+        <field name="image" type="file">
+        </field>
+
+        <field name="locale" type="string">
+            <validation name="required"/>
+        </field>
+    </model>
+</models>
